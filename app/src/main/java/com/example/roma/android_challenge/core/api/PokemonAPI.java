@@ -33,7 +33,7 @@ public class PokemonAPI {
                 .baseUrl(baseUrl)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-                //.client(getOkHttpClient())
+                .client(getOkHttpClient())
                 .build();
 
         this.service = retrofit.create(API.class);

@@ -13,8 +13,8 @@
         android:layout_marginBottom="8dp">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:transitionName="img"
             tools:src="@drawable/ic_launcher_background"
             android:id="@+id/iv_pokemon_feature_img"/>
@@ -42,6 +42,13 @@
                 tools:text="type"
                 android:id="@+id/tv_pokemon_type"/>
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/iv_pokemon_favorite"
+                android:src="@android:drawable/btn_star_big_off"/>
+
         </LinearLayout>
     </LinearLayout>
 
@@ -62,16 +69,16 @@
             android:text="Sprites"/>
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             tools:src="@mipmap/ic_launcher"
             android:layout_margin="8dp"
             android:transitionName="img"
             android:id="@+id/iv_pokemon_sprite_front_defautl"/>
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             tools:src="@mipmap/ic_launcher"
             android:layout_margin="8dp"
             android:id="@+id/iv_pokemon_sprite_back_defautl"/>

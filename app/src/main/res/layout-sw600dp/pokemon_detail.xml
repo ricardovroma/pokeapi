@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:transitionName="img"
+            tools:src="@drawable/ic_launcher_background"
+            android:id="@+id/iv_pokemon_feature_img"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_pokemon_name"
+                style="@style/PokemonTitle"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                tools:text="Name" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PokemonType"
+                android:layout_marginTop="16dp"
+                tools:text="type"
+                android:id="@+id/tv_pokemon_type"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/default_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:text="Sprites"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@mipmap/ic_launcher"
+            android:layout_margin="8dp"
+            android:transitionName="img"
+            android:id="@+id/iv_pokemon_sprite_front_defautl"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@mipmap/ic_launcher"
+            android:layout_margin="8dp"
+            android:id="@+id/iv_pokemon_sprite_back_defautl"/>
+    </LinearLayout>
+
+    <include layout="@layout/default_line"/>
+
+</LinearLayout>

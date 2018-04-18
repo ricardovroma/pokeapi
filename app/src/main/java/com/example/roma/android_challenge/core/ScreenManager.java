@@ -10,6 +10,7 @@ import android.view.View;
 
 import com.example.roma.android_challenge.core.api.models.PokemonModelRest;
 import com.example.roma.android_challenge.pokemon_detail.PokemonDetailActivity;
+import com.example.roma.android_challenge.pokemon_favorite.PokemonFavoriteActivity;
 import com.example.roma.android_challenge.pokemon_list.PokemonListActivity;
 
 public class ScreenManager {
@@ -28,7 +29,7 @@ public class ScreenManager {
     }
 
     public static void gotoPokemonFavorite(Context context) {
-//        Intent it = new Intent(context, PokemonFavoriteActivity.class);
-//        context.startActivity(it);
+        Intent it = new Intent(context, PokemonFavoriteActivity.class);
+        context.startActivity(it);
     }
 }

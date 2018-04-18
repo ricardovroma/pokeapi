@@ -36,8 +36,8 @@ public class CustomApplication extends Application {
         Fabric.with(this, crashlyticsKit);
 
         Configuration dbConfiguration = new Configuration.Builder(this)
-                .setDatabaseName("MyDb.db")
-                .setDatabaseVersion(1)
+                .setDatabaseName("PokeApi.db")
+                .setDatabaseVersion(2)
                 .addModelClass(Favorite.class)
                 .create();
 

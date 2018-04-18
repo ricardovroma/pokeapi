@@ -2,6 +2,7 @@ package com.example.roma.android_challenge.pokemon_detail;
 
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -24,13 +25,24 @@ public class PokemonDetailActivity extends BaseActivity implements PokemonDetail
     private ImageView ivPokemonFavorite;
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pokemon_detail);
 
+        item = (PokemonModelRest) getIntent().getSerializableExtra(ITEM);
+
+        getSupportActionBar().setTitle(item.name);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         presenter = new PokemonDetailPresenterImpl(this);
 
-        item = (PokemonModelRest) getIntent().getSerializableExtra(ITEM);
+
 
         ivPokemonFeatureImg = findViewById(R.id.iv_pokemon_feature_img);
         ivPokemonSpriteFrontDefautl = findViewById(R.id.iv_pokemon_sprite_front_defautl);

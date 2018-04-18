@@ -28,7 +28,7 @@ public class PokemonFavoriteInteractorImpl implements PokemonFavoriteContract.In
     }
 
     @Override
-    public void load(int page) {
+    public void load() {
         try {
             presenter.build(FavoriteDao.sharedInstance().getFavorites());
         }catch (Exception e) {

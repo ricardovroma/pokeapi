@@ -21,6 +21,6 @@ public interface PokemonFavoriteContract {
     }
 
     interface Interactor {
-        void load(int page);
+        void load();
     }
 }

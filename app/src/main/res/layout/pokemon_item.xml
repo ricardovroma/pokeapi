@@ -51,7 +51,16 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:text="pokemon tipo" />
 
-    <include layout="@layout/default_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include
+            layout="@layout/default_line"/>
+    </LinearLayout>
+
 
     <include layout="@layout/default_loader_item"/>
 

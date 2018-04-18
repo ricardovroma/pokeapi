@@ -19,7 +19,7 @@ public class PokemonFavoritePresenterImpl implements PokemonFavoriteContract.Pre
     @Override
     public void load() {
         view.showLoading();
-        interactor.load(1);
+        interactor.load();
     }
 
     @Override
